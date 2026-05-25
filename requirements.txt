@@ -1,0 +1,34 @@
+# ---- Runtime deps for the MIA pipeline (src/, scripts/) -------------------
+# Tested on Python 3.10+. Pin major versions only — leave room for security
+# patches but cap before known-breaking majors.
+
+# LLM client: OpenAI-compatible chat completion (vLLM / SGLang / OpenAI).
+openai>=1.30,<2
+
+# Configs.
+PyYAML>=6.0
+
+# Embeddings (Memory similarity + H-RAG selector).
+sentence-transformers>=2.7,<4
+# sentence-transformers pulls torch + transformers transitively, but we list
+# them explicitly so versions are visible and easy to override for a specific
+# CUDA build.
+torch>=2.1
+transformers>=4.40
+numpy>=1.24
+scikit-learn>=1.3
+
+# CLI / IO.
+tqdm>=4.65
+
+# Statistics scripts (src/stats/).
+matplotlib>=3.7
+wordcloud>=1.9
+
+# ---- LLaMA-Factory training/metric.py deps --------------------------------
+# Only needed when you actually run training/prediction through LLaMA-Factory
+# with our metric.py drop-in. LLaMA-Factory itself is installed separately.
+jieba>=0.42
+nltk>=3.8
+rouge-chinese>=1.0.3
+pycocoevalcap>=1.2

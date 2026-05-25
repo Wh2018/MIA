@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+data/etom/**
+data/pfd/**
+data/memory/**
+data/instruction/**
+data/stats/**
+data/training/**
+models/**
+
+!data/
+!data/**/
+!data/**/.gitkeep
+!models/
+!models/.gitkeep

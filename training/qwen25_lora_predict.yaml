@@ -1,0 +1,35 @@
+# Batch generation with this config is slow because it goes through the
+# transformers generate loop. For faster inference, use LLaMA-Factory's
+# `scripts/vllm_infer.py` (or our pipeline runner, which can switch backends).
+
+### model
+# Both paths can be overridden on the command line. The adapter path must
+# point to the directory created by `qwen25_lora_sft.yaml` (it contains
+# `adapter_config.json`).
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct
+adapter_name_or_path: data/training/sft_output
+trust_remote_code: true
+
+### method
+stage: sft
+do_predict: true
+finetuning_type: lora
+
+### dataset
+# Pair with whichever test set matches the trained adapter (CPsy_test /
+# ESC_test).
+eval_dataset: CPsy_test
+template: qwen
+cutoff_len: 20480
+max_samples: 40000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: data/training/predict_output
+overwrite_output_dir: true
+
+### eval
+per_device_eval_batch_size: 1
+predict_with_generate: true
+ddp_timeout: 180000000

@@ -1,0 +1,30 @@
+# OpenAI-compatible LLM configuration.
+# Fill these values locally before running the pipeline.
+
+base_url: ""
+api_key: ""
+model_gen: "Qwen2.5-72B-Instruct"
+model_judge: "Qwen2.5-32B-Instruct"
+
+eval_base_url: ""
+eval_api_key: ""
+model_eval: "gpt-4o"
+
+predict_base_url: ""
+predict_api_key: ""
+model_predict: "GLM-4.7"
+
+temperature: 0.7
+top_p: 0.9
+max_tokens: 1024
+timeout: 120
+max_retries: 3
+retry_backoff: 2.0
+
+disable_thinking_extra_body: false
+eval_disable_thinking_extra_body: false
+predict_disable_thinking_extra_body: false
+
+sbert_model_path: "Qwen/Qwen3-Embedding-0.6B"
+sbert_device: "cuda:0"
+embedding_query_prompt_name: "query"

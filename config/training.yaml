@@ -1,0 +1,6 @@
+# Local training configuration.
+# Fill these values locally before running training.
+
+base_model_path: "Qwen/Qwen2.5-7B-Instruct"
+llamafactory_dir: ""
+cuda_device: "0"
