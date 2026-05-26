@@ -1,8 +1,5 @@
 """Parse per-conversation LLM output files into a single 7-factor JSON.
 
-Replaces both IJCAI/prompt/src/Seven_2_gen_ESC.py and
-IJCAI/CPsy/src/Seven_2_gen_CPsy.py — they were near-duplicates.
-
 Input  : directory of `Qwen{idx}.txt` files produced by gen_seven_{esc,cpsy}.
 Output : a single JSON keyed by file name, each value a list of turn dicts:
          {Count, utterance: {seeker, supporter}, Belief, Intention, Desire,

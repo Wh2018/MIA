@@ -1,7 +1,5 @@
 """PFD (Personal-Factual Discriminator) generation for ESConv.
 
-Replaces IJCAI/prompt/src/ER_ESC_pure_mind.py.
-
 Reads:
   - Formatted ESC JSON  (list[{"history": [["seeker","supporter"], ...]}])
   - Directory of Qwen{idx}.txt files holding 4-factor mind info per turn

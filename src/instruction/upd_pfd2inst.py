@@ -1,14 +1,5 @@
 """Convert PFD-labeled updated-memory JSON → instruction format.
 
-Merges and supersedes:
-  - IJCAI/Update/dataset2inst/upd_ER2inst.py     (had try/except cruft)
-  - IJCAI/Update/dataset2inst/upd_newER2inst.py  (cleaner)
-
-Bug fix: the legacy `elif approach == "both emotional and rational" or "" or "None"
-or "None.":` was a no-op chain (empty string and bare literals are always
-falsy / truthy independently of the comparison). Replaced with explicit
-`in (...)` membership.
-
 Branches on the `Approach` field:
   - emotional-focused           → Personal block only (Beliefs/Intentions/...).
   - rational-focused            → Factual block only (Facts/Causes/Results).

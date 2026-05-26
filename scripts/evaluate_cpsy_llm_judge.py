@@ -7,8 +7,8 @@ Each prediction line is expected to contain:
     {"prompt": "...", "predict": "...", "label": "..."}
 
 Outputs:
-    llm_judge/gpt-5-mini/per_sample.jsonl
-    llm_judge/gpt-5-mini/summary.json
+    llm_judge/GPT-4o/per_sample.jsonl
+    llm_judge/GPT-4o/summary.json
 
 Each API call returns all four CPsyCounD dimension scores for one sample:
     comprehensiveness: 0-2

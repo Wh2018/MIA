@@ -1,6 +1,6 @@
 """Merge PFD (Approach / Explanation) labels into updated-memory JSON.
 
-Replaces IJCAI/Update/dataset2inst/add_ER.py. The updated-memory JSON is a
+he updated-memory JSON is a
 flat list keyed by item_ids[0] and turn_ids[0]; the PFD JSON is keyed by
 `Qwen{N}.txt`. We look up each memory entry's matching PFD turn and copy
 its `Approach` and `Explanation` fields onto the memory entry.

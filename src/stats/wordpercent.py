@@ -1,8 +1,5 @@
 """Per-factor average words/sentence and sentences/turn.
 
-Replaces IJCAI/Statistics/statistics_wordpersent.py. The original code had
-hard-coded counts; this version recomputes them from a 7-factor JSON so the
-chart stays in sync with the data.
 """
 
 from __future__ import annotations

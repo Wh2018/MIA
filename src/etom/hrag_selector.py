@@ -1,9 +1,5 @@
 """Hierarchical Retrieval-Augmented exemplar Selector for EToM generation.
 
-The paper describes H-RAG as a Retrieval-Augmented Semantic Selector that
-picks the most relevant few-shot exemplars per query, rather than using a
-fixed prompt prefix. The original code shipped only static exemplars; this
-module implements the real dynamic selection.
 
 Pipeline:
   1. Load an exemplar bank (JSON list, each entry = one labeled dialogue turn

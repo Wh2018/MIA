@@ -1,6 +1,5 @@
 """Top-20 word frequency bar charts per EToM factor.
 
-Replaces IJCAI/Statistics/statistics_wordfreq.py.
 """
 
 from __future__ import annotations

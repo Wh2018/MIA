@@ -1,6 +1,6 @@
 """Drive Mental_Memory across an entire dataset.
 
-Replaces IJCAI/Update/updater.py. Input is a 7-factor JSON keyed by file name
+Input is a 7-factor JSON keyed by file name
 (produced by src/etom/parse_seven.py). For every turn we instantiate a
 Mental_State and call `memory.whole_updater()`; at item boundaries we flush
 the memory contents to an output JSON.

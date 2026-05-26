@@ -1,8 +1,5 @@
 """Legacy 3-factor pure-factual gen → instruction converter.
 
-Preserved from IJCAI/Update/dataset2inst/gen2inst.py for backwards-compat
-with the older pipeline that used (Observable Events / Past Experiences /
-Potential Behaviors) instead of the full 7-factor EToM block.
 """
 
 from __future__ import annotations

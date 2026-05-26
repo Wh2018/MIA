@@ -1,11 +1,5 @@
 """Generate EToM 7-factor annotations for ESConv-style dialogues.
 
-Replaces IJCAI/prompt/src/Seven_ESC.py:
-  - Uses the unified LLMClient (config-driven endpoint/model).
-  - Uses HRAGSelector to pick top-k exemplars per turn (paper's H-RAG claim),
-    instead of a fixed static prefix.
-  - All paths are relative; configurable via CLI flags.
-
 Input JSON shape (matching the original):
     [
       {"history": [["seeker turn", "supporter turn"], ...]},

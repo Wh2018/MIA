@@ -1,6 +1,6 @@
 """Convert updated-memory JSON → LLaMA-Factory instruction format (no PFD).
 
-Replaces IJCAI/Update/dataset2inst/upd2inst.py. Baseline that always pastes
+Baseline that always pastes
 all 7 factors into the prompt — used for the "no-PFD" ablation.
 """
 

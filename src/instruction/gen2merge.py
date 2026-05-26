@@ -1,6 +1,6 @@
 """Legacy 3-factor pure-factual raw-output parser.
 
-Preserved from IJCAI/Update/dataset2inst/gen2merge.py. Parses Qwen*.txt or
+Parses Qwen*.txt or
 Qwen*.json (Chinese-mode) files containing Observable Events / Past
 Experiences / Potential Behaviors blocks and emits a single JSON.
 """

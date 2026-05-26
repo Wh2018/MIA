@@ -1,7 +1,5 @@
 """Generate EToM 7-factor annotations for CPsyCounD-style dialogues.
 
-NEW script — the original codebase only had a CPsy parser
-(`Seven_2_gen_CPsy.py`) with no matching generator. This file fills that gap.
 
 Reuses the same prompt template and HRAG selector as the ESC generator, but
 defaults to the Chinese exemplar bank so retrieved few-shot examples match

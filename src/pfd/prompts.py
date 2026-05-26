@@ -5,8 +5,6 @@ The original codebase uses three labels:
   - rational-focused           (== "Factual"  branch in the paper)
   - both emotional and rational(== "Both"    branch in the paper)
 
-We keep the original strings so legacy data files remain compatible; the
-README documents the mapping to the paper's nomenclature.
 """
 
 PFD_PROMPT_ESC = """

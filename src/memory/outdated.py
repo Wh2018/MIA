@@ -1,6 +1,6 @@
 """LLM-based outdated-memory judgment (ORM helper).
 
-Replaces IJCAI/Update/discriminate_outdated.py. Uses the unified LLMClient
+Uses the unified LLMClient
 (role="judge", which is the Qwen2.5-32B-Instruct default).
 """
 

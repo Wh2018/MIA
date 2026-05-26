@@ -2,9 +2,9 @@
 # Build the downstream data artifacts (memory → instruction set) starting from
 # the EToM + PFD JSONs. Used for both ESC and CPsy:
 #
-#   - ESC: legacy IJCAI shipped these artifacts. You only need this script
+#   - ESC: You only need this script
 #          if you want to regenerate them from scratch.
-#   - CPsy: legacy IJCAI never shipped them. You must run this before
+#   - CPsy:  You must run this before
 #           scripts/train.sh CPsy.
 #
 # Inputs (must already exist):

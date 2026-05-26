@@ -1,6 +1,5 @@
 """PFD (Personal-Factual Discriminator) generation for CPsyCounD.
 
-Replaces IJCAI/prompt/src/ER_CPsy_Seven.py.
 
 Input shapes accepted:
   (A) Original CPsy turn-list (one element per turn, grouped by Item[0]):

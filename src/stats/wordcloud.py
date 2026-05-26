@@ -1,6 +1,6 @@
 """Word-cloud visualization for each EToM factor.
 
-Replaces IJCAI/Statistics/statistics_wordcloud.py. Pass --font to point at
+Pass --font to point at
 your TTF (Times by default).
 """
 

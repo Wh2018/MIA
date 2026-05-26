@@ -1,6 +1,6 @@
 """Cross-reference ORM "outdated" log against the 7-factor gen file.
 
-Replaces IJCAI/Statistics/statistics_OFD.py. For every memory entry that the
+For every memory entry that the
 ORM judged outdated, find the turn in the gen file where that text first
 appeared, and tally the gap turn_id_ofd − turn_id_gen.
 """
